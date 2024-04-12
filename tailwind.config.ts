@@ -7,6 +7,22 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    images: {
+      domains: ["pexels.com"],
+    },
+    screens: {
+      sm: "640px",
+      md: "768px",
+      lg: "1024px",
+      xl: "1280px",
+    },
+    colors: {
+      primary: "#FF3163",
+      title: "#333",
+      subtitle: "#666",
+      light: "#999",
+      border: "#F3F3F3",
+    },
     extend: {
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
