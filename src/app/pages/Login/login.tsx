@@ -1,9 +1,26 @@
+"use client";
+
+import { useState } from "react";
 import Button from "../../components/button";
 import GlobalModal from "../../components/globalModal";
 import Input from "../../components/input";
 import FormComponent from "./components/FormComponent";
+import { useRouter } from "next/navigation";
 
 export default function Login() {
+  const [showPassword, setShowPassword] = useState(false);
+
+  const [login, setLogin] = useState("");
+  const [password, setPassword] = useState("");
+
+  function typePassword() {
+    if (login.length > 5) {
+      setShowPassword(true);
+    }
+  }
+
+  const router = useRouter();
+
   return (
     <div className="flex ">
       <div className="flex w-full items-center justify-center h-screen">
@@ -19,10 +36,30 @@ export default function Login() {
             </p>
           </div>
 
-          <Input placeholder="Email ou nome de usuário" />
+          <Input
+            placeholder="Email ou nome de usuário"
+            value={login}
+            onChange={(e) => setLogin(e.target.value)}
+          />
+
+          {showPassword && (
+            <Input
+              placeholder="Senha"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              type="password"
+            />
+          )}
 
           <div className="flex flex-col gap-3">
-            <Button label="Continuar" />
+            <Button
+              label={showPassword ? "Logar" : "Continuar"}
+              onClick={
+                showPassword ? () => router.push("/dashboard") : typePassword
+              }
+              disabled={login === ""}
+            />
+
             <GlobalModal
               title="Inserir código de cadastro no sistema"
               description="Insira abaixo o código de convite que você recebeu de um usuário
