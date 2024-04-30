@@ -13,7 +13,7 @@ body {
 }
 
 .buttonPrimary {
-  @apply bg-primary text-[#fff] font-bold h-[55px] rounded-xl hover:brightness-90 text-sm transition-all duration-200;
+  @apply bg-primary disabled:brightness-125 disabled:cursor-not-allowed text-[#fff] font-bold h-[55px] rounded-xl hover:brightness-90 text-sm transition-all duration-200;
 }
 
 .buttonSecondary {

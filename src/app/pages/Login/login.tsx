@@ -1,5 +1,7 @@
-import Button from "../components/button";
-import Input from "../components/input";
+import Button from "../../components/button";
+import GlobalModal from "../../components/globalModal";
+import Input from "../../components/input";
+import FormComponent from "./components/FormComponent";
 
 export default function Login() {
   return (
@@ -21,10 +23,17 @@ export default function Login() {
 
           <div className="flex flex-col gap-3">
             <Button label="Continuar" />
-            <Button
-              label="Inserir código de cadastro (convite)"
-              theme="Secondary"
-            />
+            <GlobalModal
+              title="Inserir código de cadastro no sistema"
+              description="Insira abaixo o código de convite que você recebeu de um usuário
+              já cadastrado na plataforma continuar com o cadastro."
+              content={<FormComponent />}
+            >
+              <Button
+                label="Inserir código de cadastro (convite)"
+                theme="Secondary"
+              />
+            </GlobalModal>
           </div>
         </div>
       </div>
