@@ -1,3 +1,5 @@
+import Login from "./pages/Login/login";
+
 export default function Main() {
-  return <h1>Hello world</h1>;
+  return <Login />;
 }
