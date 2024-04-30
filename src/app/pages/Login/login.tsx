@@ -6,6 +6,7 @@ import GlobalModal from "../../components/globalModal";
 import Input from "../../components/input";
 import FormComponent from "./components/FormComponent";
 import { useRouter } from "next/navigation";
+import { MagicCard, MagicMotion } from "react-magic-motion";
 
 export default function Login() {
   const [showPassword, setShowPassword] = useState(false);
@@ -22,7 +23,7 @@ export default function Login() {
   const router = useRouter();
 
   return (
-    <div className="flex ">
+    <div className="flex">
       <div className="flex w-full items-center justify-center h-screen">
         <div className="flex flex-col gap-3 p-5 w-full max-w-[500px] px-[]">
           <h1 className="logoStyle">CatólicaSC</h1>
