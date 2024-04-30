@@ -1,12 +1,8 @@
-"use client";
-
-import { TextareaHTMLAttributes, useState } from "react";
+import { TextareaHTMLAttributes } from "react";
 
 interface Props extends TextareaHTMLAttributes<HTMLTextAreaElement> {}
 
 export default function LargeInput(props: Props) {
-  const [visible, setVisible] = useState<boolean>(false);
-
   return (
     <div className="relative">
       <textarea

@@ -8,18 +8,14 @@ interface Props extends InputHTMLAttributes<HTMLInputElement> {}
 export default function Input(props: Props) {
   const [visible, setVisible] = useState<boolean>(false);
 
+  const isVisible = () => (visible ? "text" : "password");
+
   return (
     <div className="relative">
       <input
         className="border-2 rounded-xl w-full text-title border-border p-4 transition-all duration-200 focus:border-primary outline-none"
         {...props}
-        type={
-          props.type === "password"
-            ? visible
-              ? "text"
-              : "password"
-            : props.type
-        }
+        type={props.type === "password" ? isVisible() : props.type}
       />
 
       {props.type === "password" && (

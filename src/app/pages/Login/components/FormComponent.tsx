@@ -3,30 +3,28 @@
 import Button from "@/app/components/button";
 import Input from "@/app/components/input";
 import LargeInput from "@/app/components/resizable";
-import { useRouter } from "next/navigation";
 import { useState } from "react";
 
 interface Props {
   closeFunc?: (e: any) => void;
+  step: number;
+  nextStep: (e: any) => void;
 }
 
-export default function FormComponent({ closeFunc }: Props) {
-  const [step, setStep] = useState<number>(1);
+export default function FormComponent({
+  closeFunc,
+  step,
+  nextStep,
+}: Readonly<Props>) {
+  const [code, setCode] = useState<string>("");
 
-  const [code, setCode] = useState<String>("");
+  const [name, setName] = useState<string>("");
+  const [email, setEmail] = useState<string>("");
+  const [username, setUsername] = useState<string>("");
+  const [bio, setBio] = useState<string>("");
 
-  const [name, setName] = useState<String>("");
-  const [email, setEmail] = useState<String>("");
-  const [username, setUsername] = useState<String>("");
-  const [bio, setBio] = useState<String>("");
-
-  const [password, setPassword] = useState<String>();
-  const [confirmPassword, setConfirmPassword] = useState<String>();
-
-  const router = useRouter();
-
-  const nextStep = () =>
-    step == 3 ? router.push("/login") : setStep(step + 1);
+  const [password, setPassword] = useState<string>();
+  const [confirmPassword, setConfirmPassword] = useState<string>();
 
   return (
     <div className="flex flex-col w-full gap-3">
@@ -50,20 +48,20 @@ export default function FormComponent({ closeFunc }: Props) {
         <>
           <Input
             placeholder="Nome*"
-            value={name as string}
+            value={name}
             onChange={(e) => setName(e.target.value)}
           />
 
           <Input
             placeholder="Email (@catolica.org.br)*"
-            value={email as string}
+            value={email}
             type="email"
             onChange={(e) => setEmail(e.target.value)}
           />
 
           <Input
             placeholder="Nome de usuário único*"
-            value={username as string}
+            value={username}
             onChange={(e) => setUsername(e.target.value)}
           />
 

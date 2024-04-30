@@ -6,13 +6,16 @@ import GlobalModal from "../../components/globalModal";
 import Input from "../../components/input";
 import FormComponent from "./components/FormComponent";
 import { useRouter } from "next/navigation";
-import { MagicCard, MagicMotion } from "react-magic-motion";
 
 export default function Login() {
   const [showPassword, setShowPassword] = useState(false);
 
+  const [step, setStep] = useState<number>(1);
+
   const [login, setLogin] = useState("");
   const [password, setPassword] = useState("");
+
+  const router = useRouter();
 
   function typePassword() {
     if (login.length > 5) {
@@ -20,7 +23,9 @@ export default function Login() {
     }
   }
 
-  const router = useRouter();
+  const nextStep = () =>
+    step == 3 ? router.push("/login") : setStep(step + 1);
+  const lastStep = () => step != 1 && setStep(step - 1);
 
   return (
     <div className="flex">
@@ -62,10 +67,18 @@ export default function Login() {
             />
 
             <GlobalModal
-              title="Inserir código de cadastro no sistema"
-              description="Insira abaixo o código de convite que você recebeu de um usuário
-              já cadastrado na plataforma continuar com o cadastro."
-              content={<FormComponent />}
+              title={
+                step == 1
+                  ? "Inserir código de cadastro no sistema"
+                  : "Realizar cadastro"
+              }
+              description={
+                step == 1
+                  ? "Insira abaixo o código de convite que você recebeu de um usuário já cadastrado na plataforma continuar com o cadastro."
+                  : "Tudo pronto! Agora você precisa apenas preencher os dados restantes para finalizar o cadastro."
+              }
+              content={<FormComponent step={step} nextStep={nextStep} />}
+              goBackFunc={step == 1 ? undefined : lastStep}
             >
               <Button
                 label="Inserir código de cadastro (convite)"
