@@ -1,9 +1,9 @@
 "use client";
 
 import { useState } from "react";
-import Button from "../../components/button";
-import GlobalModal from "../../components/globalModal";
-import Input from "../../components/input";
+import Button from "../components/button";
+import GlobalModal from "../components/globalModal";
+import Input from "../components/input";
 import FormComponent from "./components/FormComponent";
 import { useRouter } from "next/navigation";
 
@@ -61,7 +61,9 @@ export default function Login() {
             <Button
               label={showPassword ? "Logar" : "Continuar"}
               onClick={
-                showPassword ? () => router.push("/dashboard") : typePassword
+                showPassword
+                  ? () => router.push(`/dashboard?username=${login}`)
+                  : typePassword
               }
               disabled={login === ""}
             />
@@ -77,7 +79,13 @@ export default function Login() {
                   ? "Insira abaixo o código de convite que você recebeu de um usuário já cadastrado na plataforma continuar com o cadastro."
                   : "Tudo pronto! Agora você precisa apenas preencher os dados restantes para finalizar o cadastro."
               }
-              content={<FormComponent step={step} nextStep={nextStep} />}
+              content={
+                <FormComponent
+                  step={step}
+                  closeFunc={() => router.push("/dashboard")}
+                  nextStep={nextStep}
+                />
+              }
               goBackFunc={step == 1 ? undefined : lastStep}
             >
               <Button
