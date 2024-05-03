@@ -14,7 +14,7 @@ export default function ContentSidebar(props: Readonly<Props>) {
         )}
       </div>
 
-      <div className="flex flex-col h-[calc(100vh-144px)] overflow-x-auto">
+      <div className="flex flex-col h-[calc(100vh-144px)] scrollbar-hide overflow-x-auto">
         {props.content.map((user) => (
           <UserItem
             name={user.name}

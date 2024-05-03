@@ -19,3 +19,13 @@ body {
 .buttonSecondary {
   @apply border-2 border-primary text-primary font-bold h-[55px] text-sm rounded-xl hover:opacity-40 transition-all duration-200;
 }
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* For IE, Edge and Firefox */
+.scrollbar-hide {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}

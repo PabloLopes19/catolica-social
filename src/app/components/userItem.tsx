@@ -13,7 +13,7 @@ export default function UserItem(props: Readonly<Props>) {
   return (
     <Link
       href={props.to}
-      className="flex gap-3 items-center p-5 border-b-2 border-border"
+      className="flex gap-3 items-center p-5 border-b-2 border-border hover:opacity-40 transition-all duration-200"
     >
       <div className="flex items-center justify-center bg-border rounded-lg p-3">
         <User size={20} className="text-light" />
