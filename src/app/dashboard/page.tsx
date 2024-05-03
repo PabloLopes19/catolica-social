@@ -23,6 +23,7 @@ export default function Dashboard() {
 
       <div className="flex w-full min-h-[calc(100vh-80px)] justify-center">
         <SideBar />
+
         <div className="flex w-full scrollbar-hide h-[calc(100vh-80px)] overflow-y-auto max-w-[1200px] flex-col">
           <div className="flex w-full p-10 text-description">
             Olá{username ? `, ${username}` : "!"}
@@ -31,6 +32,7 @@ export default function Dashboard() {
             <Post key={post.id} postData={post} />
           ))}
         </div>
+
         <ContentSidebar title="Usuários" content={Users} />
       </div>
     </div>

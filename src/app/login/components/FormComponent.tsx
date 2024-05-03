@@ -3,7 +3,6 @@
 import Button from "@/app/components/button";
 import Input from "@/app/components/input";
 import LargeInput from "@/app/components/resizable";
-import { useRouter } from "next/navigation";
 import { useState } from "react";
 
 interface Props {
@@ -26,8 +25,6 @@ export default function FormComponent({
 
   const [password, setPassword] = useState<string>();
   const [confirmPassword, setConfirmPassword] = useState<string>();
-
-  const router = useRouter();
 
   return (
     <div className="flex flex-col w-full gap-3">
