@@ -28,17 +28,24 @@ export default function PostCreator(props: Props) {
       />
 
       <div className="flex w-full items-center justify-between">
-        <button className="settingsButton">
-          <FadersHorizontal size={14} />
-          Configurações
-        </button>
-        <div className="flex gap-3 items-center">
-          <button className="littleButton">
-            <Users size={24} weight="bold" />
+        <div className="sm:flex hidden">
+          <button className="settingsButton">
+            <FadersHorizontal size={14} />
+            Configurações
           </button>
-          <button className="littleButton">
-            <ImageIcon size={24} weight="bold" />
-          </button>
+        </div>
+
+        <div className="flex gap-3 w-full items-center flex-wrap sm:justify-end justify-between">
+          <div className="flex gap-3 items-center">
+            <button className="littleButton">
+              <Users size={24} weight="bold" />
+            </button>
+
+            <button className="littleButton">
+              <ImageIcon size={24} weight="bold" />
+            </button>
+          </div>
+
           <button className="bg-primary disabled:brightness-125 px-5 disabled:cursor-not-allowed h-[50px] text-[#fff] font-bold rounded-2xl hover:brightness-90 text-sm transition-all duration-200">
             Publicar
           </button>
