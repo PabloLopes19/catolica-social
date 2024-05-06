@@ -13,11 +13,19 @@ body {
 }
 
 .buttonPrimary {
-  @apply bg-primary disabled:brightness-125 disabled:cursor-not-allowed text-[#fff] font-bold h-[55px] rounded-xl hover:brightness-90 text-sm transition-all duration-200;
+  @apply bg-primary disabled:brightness-125 px-5 disabled:cursor-not-allowed h-[55px] text-[#fff] font-bold rounded-2xl hover:brightness-90 text-sm transition-all duration-200;
+}
+
+.littleButton {
+  @apply p-[10px] h-[44px] aspect-square hover:opacity-40 transition-all duration-200 rounded-xl border-2 border-border flex items-center justify-center text-[#ccc];
+}
+
+.settingsButton {
+  @apply flex gap-[6px] rounded-xl border-2 border-border px-4 py-2 text-[#ccc] items-center text-sm font-semibold hover:opacity-60 transition-all duration-200;
 }
 
 .buttonSecondary {
-  @apply border-2 border-primary text-primary font-bold h-[55px] text-sm rounded-xl hover:opacity-40 transition-all duration-200;
+  @apply border-2 border-primary text-primary font-bold h-[55px] text-sm rounded-2xl hover:opacity-40 transition-all duration-200;
 }
 
 .scrollbar-hide::-webkit-scrollbar {
