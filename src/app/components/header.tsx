@@ -1,7 +1,11 @@
 import { List, MagnifyingGlass } from "@phosphor-icons/react";
 import Link from "next/link";
 
-export default function Header() {
+interface Props {
+  username?: string;
+}
+
+export default function Header({ username }: Props) {
   return (
     <div className="flex border-b-2 border-border items-center justify-center px-10 h-[80px]">
       <div className="flex h-full items-center w-full justify-between max-w-[1200px]">
@@ -11,7 +15,7 @@ export default function Header() {
           </h1>
           <div className="h-full w-[3px] bg-border" />
           <Link href="" className="text-light">
-            aaa
+            @{username}
           </Link>
         </div>
 

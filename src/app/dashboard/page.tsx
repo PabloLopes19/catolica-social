@@ -17,7 +17,7 @@ export default function Dashboard() {
 
   return (
     <div>
-      <Header />
+      <Header username="PabloLopes19" />
 
       <div className="flex w-full min-h-[calc(100vh-80px)] justify-center">
         <SideBar />
