@@ -3,7 +3,11 @@
 import Button from "@/app/components/button";
 import Input from "@/app/components/input";
 import LargeInput from "@/app/components/resizable";
-import { useState } from "react";
+import { createUser } from "@/services/userService";
+import { getEmailDomain } from "@/utils/globalUtils";
+import { useRouter } from "next/navigation";
+import { useEffect, useState } from "react";
+import { toast } from "react-hot-toast";
 
 interface Props {
   closeFunc?: (e: any) => void;
@@ -23,8 +27,44 @@ export default function FormComponent({
   const [username, setUsername] = useState<string>("");
   const [bio, setBio] = useState<string>("");
 
-  const [password, setPassword] = useState<string>();
-  const [confirmPassword, setConfirmPassword] = useState<string>();
+  const [password, setPassword] = useState<string>("");
+  const [confirmPassword, setConfirmPassword] = useState<string>("");
+
+  const [loading, setLoading] = useState(false);
+
+  const catolicaDomain = "catolicasc.edu.br";
+
+  const router = useRouter();
+
+  function validatePassword() {
+    if (password?.length < 1 || confirmPassword.length < 1) {
+      return true;
+    } else {
+      return password !== confirmPassword;
+    }
+  }
+
+  async function registerUser() {
+    setLoading(true);
+
+    const data = await createUser({
+      name,
+      username,
+      avatar: "",
+      email,
+      bio,
+      followers: 0,
+    });
+
+    if (data.status == 200) {
+      router.push("/dashboard");
+      setLoading(false);
+    }
+    if (data.status == 201) {
+      toast.error("Nome de usuário indisponível!");
+      setLoading(false);
+    }
+  }
 
   return (
     <div className="flex flex-col w-full gap-3">
@@ -53,7 +93,7 @@ export default function FormComponent({
           />
 
           <Input
-            placeholder="Email (@catolica.org.br)*"
+            placeholder="Email (@catolicasc.edu.br)*"
             value={email}
             type="email"
             onChange={(e) => setEmail(e.target.value)}
@@ -73,7 +113,11 @@ export default function FormComponent({
 
           <Button
             onClick={nextStep}
-            disabled={code.length < 8}
+            disabled={
+              getEmailDomain(email) !== catolicaDomain ||
+              name === "" ||
+              username === ""
+            }
             label="Continuar"
           />
         </>
@@ -93,11 +137,9 @@ export default function FormComponent({
           />
 
           <Button
-            onClick={closeFunc}
-            disabled={
-              (password === "" && confirmPassword === "") ||
-              password !== confirmPassword
-            }
+            loading={loading}
+            onClick={registerUser}
+            disabled={validatePassword() || loading}
             label={"Finalizar"}
           />
         </div>

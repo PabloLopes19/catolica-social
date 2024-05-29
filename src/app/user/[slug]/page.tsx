@@ -20,11 +20,13 @@ export default function ProfilePage() {
     <div>
       <Header username={slug as string} />
 
-      <div className="container">
+      <div className="flex w-full min-h-[calc(100vh-80px)] justify-center">
         <SideBar />
 
         <div className="flex w-full scrollbar-hide h-[calc(100vh-80px)] overflow-y-auto max-w-[1200px] flex-col">
-          <ProfileContainer user={Users[0]} />
+          <ProfileContainer
+            user={Users.find((user) => user.username === slug) as User}
+          />
 
           {Posts.map((post) => (
             <Post key={post.id} postData={post} />

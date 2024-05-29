@@ -5,7 +5,8 @@
       "name": "John Doe",
       "username": "johndoe123",
       "avatar": "https://example.com/avatar1.png",
-      "email": "johndoe@example.com"
+      "email": "johndoe@example.com",
+      "bio": "Amante da natureza e apaixonado por viagens ✈️🌍"
     },
     "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     "likes": 20,
@@ -19,7 +20,8 @@
       "name": "Alice Smith",
       "username": "alicesmith456",
       "avatar": "https://example.com/avatar2.png",
-      "email": "alicesmith@example.com"
+      "email": "alicesmith@example.com",
+      "bio": "Entusiasta de tecnologia e amante de café ☕️💻"
     },
     "text": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     "likes": 15,
@@ -33,7 +35,8 @@
       "name": "Bob Johnson",
       "username": "bobjohnson789",
       "avatar": "https://example.com/avatar3.png",
-      "email": "bobjohnson@example.com"
+      "email": "bobjohnson@example.com",
+      "bio": "Apaixonado por esportes e amante de animais 🐶⚽️"
     },
     "text": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     "likes": 30,
@@ -47,7 +50,8 @@
       "name": "Emily Davis",
       "username": "emilydavis101",
       "avatar": "https://example.com/avatar4.png",
-      "email": "emilydavis@example.com"
+      "email": "emilydavis@example.com",
+      "bio": "Apaixonada por música e entusiasta de fitness 💪🎶"
     },
     "text": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
     "likes": 25,
@@ -61,7 +65,8 @@
       "name": "Michael Brown",
       "username": "michaelbrown202",
       "avatar": "https://example.com/avatar5.png",
-      "email": "michaelbrown@example.com"
+      "email": "michaelbrown@example.com",
+      "bio": "Aventureiro e amante da culinária internacional 🍜🌏"
     },
     "text": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     "likes": 18,
@@ -75,7 +80,8 @@
       "name": "Emma Wilson",
       "username": "emmawilson303",
       "avatar": "https://example.com/avatar6.png",
-      "email": "emmawilson@example.com"
+      "email": "emmawilson@example.com",
+      "bio": "Artista e amante de poesia 🎨✒️"
     },
     "text": "Nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     "likes": 22,
@@ -89,7 +95,8 @@
       "name": "Daniel Martinez",
       "username": "danielmartinez404",
       "avatar": "https://example.com/avatar7.png",
-      "email": "danielmartinez@example.com"
+      "email": "danielmartinez@example.com",
+      "bio": "Entusiasta de fotografia e amante da natureza 📸🌳"
     },
     "text": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.",
     "likes": 28,
@@ -103,7 +110,8 @@
       "name": "Olivia Taylor",
       "username": "oliviataylor505",
       "avatar": "https://example.com/avatar8.png",
-      "email": "oliviataylor@example.com"
+      "email": "oliviataylor@example.com",
+      "bio": "Amante de livros e apaixonada por viagens 📚✈️"
     },
     "text": "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.",
     "likes": 33,
@@ -117,7 +125,8 @@
       "name": "William Anderson",
       "username": "williamanderson606",
       "avatar": "https://example.com/avatar9.png",
-      "email": "williamanderson@example.com"
+      "email": "williamanderson@example.com",
+      "bio": "Entusiasta de tecnologia e amante de música 🎧💻"
     },
     "text": "Sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.",
     "likes": 17,
@@ -131,7 +140,8 @@
       "name": "Sophia Thomas",
       "username": "sophiathomas707",
       "avatar": "https://example.com/avatar10.png",
-      "email": "sophiathomas@example.com"
+      "email": "sophiathomas@example.com",
+      "bio": "Apaixonada por filmes clássicos e entusiasta de arte 🎥🎨"
     },
     "text": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam.",
     "likes": 21,
@@ -145,7 +155,8 @@
       "name": "James Lee",
       "username": "jameslee808",
       "avatar": "https://example.com/avatar11.png",
-      "email": "jameslee@example.com"
+      "email": "jameslee@example.com",
+      "bio": "Entusiasta de esportes e amante de aventuras ao ar livre ⚽️🏞️"
     },
     "text": "Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur.",
     "likes": 26,
@@ -159,7 +170,8 @@
       "name": "Charlotte White",
       "username": "charlottewhite909",
       "avatar": "https://example.com/avatar12.png",
-      "email": "charlottewhite@example.com"
+      "email": "charlottewhite@example.com",
+      "bio": "Apaixonada por animais e amante de jardinagem 🐾🌷"
     },
     "text": "Vel illum qui dolorem eum fugiat quo voluptas nulla pariatur.",
     "likes": 29,
@@ -173,7 +185,8 @@
       "name": "Benjamin Harris",
       "username": "benjaminharris010",
       "avatar": "https://example.com/avatar13.png",
-      "email": "benjaminharris@example.com"
+      "email": "benjaminharris@example.com",
+      "bio": "Amante de música clássica e entusiasta de gastronomia 🎼🍽️"
     },
     "text": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.",
     "likes": 35,
@@ -187,7 +200,8 @@
       "name": "Amelia King",
       "username": "ameliaking111",
       "avatar": "https://example.com/avatar14.png",
-      "email": "ameliaking@example.com"
+      "email": "ameliaking@example.com",
+      "bio": "Aventureira e amante de esportes radicais 🏄‍♀️⛰️"
     },
     "text": "Similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.",
     "likes": 24,
@@ -201,7 +215,8 @@
       "name": "Ethan Wright",
       "username": "ethanwright212",
       "avatar": "https://example.com/avatar15.png",
-      "email": "ethanwright@example.com"
+      "email": "ethanwright@example.com",
+      "bio": "Entusiasta de tecnologia e amante de viagens espaciais 🚀🌌"
     },
     "text": "Et harum quidem rerum facilis est et expedita distinctio.",
     "likes": 19,
@@ -215,222 +230,13 @@
       "name": "Mia Green",
       "username": "miagreen313",
       "avatar": "https://example.com/avatar16.png",
-      "email": "miagreen@example.com"
+      "email": "miagreen@example.com",
+      "bio": "Artista e amante de poesia 🎨✒️"
     },
     "text": "Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.",
     "likes": 32,
     "comments": 22,
     "id": 16,
     "photo": "https://example.com/photo16.png"
-  },
-  {
-    "owner": {
-      "id": 17,
-      "name": "Alexander Baker",
-      "username": "alexanderbaker414",
-      "avatar": "https://example.com/avatar17.png",
-      "email": "alexanderbaker@example.com"
-    },
-    "text": "Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.",
-    "likes": 27,
-    "comments": 23,
-    "id": 17,
-    "photo": "https://example.com/photo17.png"
-  },
-  {
-    "owner": {
-      "id": 18,
-      "name": "Harper Hill",
-      "username": "harperhill515",
-      "avatar": "https://example.com/avatar18.png",
-      "email": "harperhill@example.com"
-    },
-    "text": "Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.",
-    "likes": 23,
-    "comments": 24,
-    "id": 18,
-    "photo": "https://example.com/photo18.png"
-  },
-  {
-    "owner": {
-      "id": 19,
-      "name": "Daniel Evans",
-      "username": "danielevans616",
-      "avatar": "https://example.com/avatar19.png",
-      "email": "danielevans@example.com"
-    },
-    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    "likes": 38,
-    "comments": 25,
-    "id": 19,
-    "photo": "https://example.com/photo19.png"
-  },
-  {
-    "owner": {
-      "id": 20,
-      "name": "Abigail Adams",
-      "username": "abigailadams717",
-      "avatar": "https://example.com/avatar20.png",
-      "email": "abigailadams@example.com"
-    },
-    "text": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-    "likes": 36,
-    "comments": 27,
-    "id": 20,
-    "photo": "https://example.com/photo20.png"
-  },
-  {
-    "owner": {
-      "id": 21,
-      "name": "David Allen",
-      "username": "davidallen818",
-      "avatar": "https://example.com/avatar21.png",
-      "email": "davidallen@example.com"
-    },
-    "text": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    "likes": 31,
-    "comments": 29,
-    "id": 21,
-    "photo": "https://example.com/photo21.png"
-  },
-  {
-    "owner": {
-      "id": 22,
-      "name": "Elizabeth Nelson",
-      "username": "elizabethnelson919",
-      "avatar": "https://example.com/avatar22.png",
-      "email": "elizabethnelson@example.com"
-    },
-    "text": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.",
-    "likes": 37,
-    "comments": 30,
-    "id": 22,
-    "photo": "https://example.com/photo22.png"
-  },
-  {
-    "owner": {
-      "id": 23,
-      "name": "Joseph Carter",
-      "username": "josephcarter020",
-      "avatar": "https://example.com/avatar23.png",
-      "email": "josephcarter@example.com"
-    },
-    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    "likes": 40,
-    "comments": 32,
-    "id": 23,
-    "photo": "https://example.com/photo23.png"
-  },
-  {
-    "owner": {
-      "id": 24,
-      "name": "Samantha Mitchell",
-      "username": "samanthamitchell121",
-      "avatar": "https://example.com/avatar24.png",
-      "email": "samanthamitchell@example.com"
-    },
-    "text": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.",
-    "likes": 45,
-    "comments": 35,
-    "id": 24,
-    "photo": "https://example.com/photo24.png"
-  },
-  {
-    "owner": {
-      "id": 25,
-      "name": "Christopher Perez",
-      "username": "christopherperez222",
-      "avatar": "https://example.com/avatar25.png",
-      "email": "christopherperez@example.com"
-    },
-    "text": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.",
-    "likes": 39,
-    "comments": 37,
-    "id": 25,
-    "photo": "https://example.com/photo25.png"
-  },
-  {
-    "owner": {
-      "id": 26,
-      "name": "Madison Roberts",
-      "username": "madisonroberts323",
-      "avatar": "https://example.com/avatar26.png",
-      "email": "madisonroberts@example.com"
-    },
-    "text": "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.",
-    "likes": 43,
-    "comments": 40,
-    "id": 26,
-    "photo": "https://example.com/photo26.png"
-  },
-  {
-    "owner": {
-      "id": 27,
-      "name": "Jackson Turner",
-      "username": "jacksonturner424",
-      "avatar": "https://example.com/avatar27.png",
-      "email": "jacksonturner@example.com"
-    },
-    "text": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam.",
-    "likes": 48,
-    "comments": 42,
-    "id": 27,
-    "photo": "https://example.com/photo27.png"
-  },
-  {
-    "owner": {
-      "id": 28,
-      "name": "Ava Phillips",
-      "username": "avaphillips525",
-      "avatar": "https://example.com/avatar28.png",
-      "email": "avaphillips@example.com"
-    },
-    "text": "Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur.",
-    "likes": 46,
-    "comments": 45,
-    "id": 28,
-    "photo": "https://example.com/photo28.png"
-  },
-  {
-    "owner": {
-      "id": 29,
-      "name": "Andrew Sanchez",
-      "username": "andrewsanchez626",
-      "avatar": "https://example.com/avatar29.png",
-      "email": "andrewsanchez@example.com"
-    },
-    "text": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-    "likes": 42,
-    "comments": 47,
-    "id": 29,
-    "photo": "https://example.com/photo29.png"
-  },
-  {
-    "owner": {
-      "id": 30,
-      "name": "Grace Wood",
-      "username": "gracewood727",
-      "avatar": "https://example.com/avatar30.png",
-      "email": "gracewood@example.com"
-    },
-    "text": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    "likes": 41,
-    "comments": 49,
-    "id": 30,
-    "photo": "https://example.com/photo30.png"
-  },
-  {
-    "owner": {
-      "id": 31,
-      "name": "Samuel Ross",
-      "username": "samuelross828",
-      "avatar": "https://example.com/avatar31.png",
-      "email": "samuelross@example.com"
-    },
-    "text": "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.",
-    "likes": 44,
-    "comments": 51,
-    "id": 31,
-    "photo": "https://example.com/photo31.png"
   }
 ]
