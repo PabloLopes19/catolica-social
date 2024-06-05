@@ -57,7 +57,7 @@ Presumindo que você [instalou as ferramentas para o _Frontend_](#frontend), com
 ```
 npm i
 
-//ou
+// ou
 
 yarn
 ```
