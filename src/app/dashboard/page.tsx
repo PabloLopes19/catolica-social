@@ -16,8 +16,8 @@ export default function Dashboard() {
   const [postContent, setPostContent] = useState("");
 
   return (
-    <div>
-      <Header />
+    <div className="flex w-full flex-col">
+      <Header username="PabloLopes19" />
 
       <div className="flex w-full min-h-[calc(100vh-80px)] justify-center">
         <SideBar />

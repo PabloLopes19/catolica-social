@@ -17,7 +17,9 @@ export default function SideBarItem(props: Readonly<Props>) {
         props.selected ? "text-primary" : "text-light"
       }`}
     >
-      {props.icon && <props.icon size={32} />}
+      {props.icon && (
+        <props.icon weight={props.selected ? "fill" : "thin"} size={32} />
+      )}
 
       <h1 className="text-lg">{props.label}</h1>
     </Link>

@@ -32,6 +32,10 @@ body {
   display: none;
 }
 
+.container {
+  @apply flex w-full bg-primary min-h-[calc(100vh-80px)] justify-center;
+}
+
 /* For IE, Edge and Firefox */
 .scrollbar-hide {
   -ms-overflow-style: none; /* IE and Edge */
